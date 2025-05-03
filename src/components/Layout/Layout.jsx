@@ -49,7 +49,9 @@ const Layout = () => {
       </main>
 
       <footer>
-        <p>Min Footer</p>
+        <p className="flex justify-center font-thin text-neutral-500 mt-12">
+          <Link to="/">&copy; Johanna Larsson </Link>
+        </p>
       </footer>
     </>
   );
