@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import profileImg from '/images/837111666.jpg'
 
 function Home() {
   useEffect(() => {
@@ -8,7 +9,7 @@ function Home() {
   return (
     <div className="flex flex-col items-center justify-center text-center px-4 ">
       <div className="my-11 md:flex items-center space-x-6 text-nowrap">
-        <img src="images/837111666.jpg" alt="Min bild" className="rounded-full w-96 mb-9 md:mb-0" />
+        <img src={profileImg} alt="Min profilbild" className="rounded-full w-96 mb-9 md:mb-0" />
         <section>
           <h2 className="text-xl mb-6 text-neutral-800 ">Student | Blivande Frontendutvecklare</h2>
           <p className="text-base md:text-lg max-w-xl mx-auto mb-10 text-pink-400">Utvecklar min framtid, en rad åt gången.</p>
