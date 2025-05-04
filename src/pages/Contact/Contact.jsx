@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <div className="flex flex-col items-center justify-center text-center px-4 ">
-      <div className="my-11 flex flex-col sm:flex-row items-center justify-center space-x-6">
+      <div className="my-11 flex flex-col sm:flex-row items-center justify-center sm:space-x-6">
         <img src={contactImg} alt="Min kontaktbild" className="rounded-full w-96 mb-9 md:mb-0" />
         <section>
           <h2 className="text-xl font-medium mb-6">Kontakta mig</h2>
