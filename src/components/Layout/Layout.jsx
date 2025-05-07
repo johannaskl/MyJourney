@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <header className="text-center mt-10">
         <Link to="/">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold mb-10">Johanna Larsson</h1>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold mb-10 text-nowrap">Johanna Larsson</h1>
           <hr className="md:max-w-5xl mx-auto my-5" />
         </Link>
 
