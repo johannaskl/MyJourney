@@ -1,11 +1,21 @@
+import React, { useState } from "react";
 import light from "/images/tic-tac-light.png";
 import lightWin from "/images/tic-tac-light-win.png";
 import dark from "/images/tic-tac-dark.png";
 import darkWin from "/images/tic-tac-dark-win.png";
 
 function TicTacToe() {
-  return (
+  const [selectedImage, setSelectedImage] = useState(null);
 
+  const handleClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const handleClose = () => {
+    setSelectedImage(null);
+  };
+
+  return (
     <section className="text-base max-w-xl mx-auto text-left sm:text-justify space-y-3">
       <div>
         <h3 className="font-semibold">Tre i rad</h3>
@@ -31,14 +41,33 @@ function TicTacToe() {
       <h5 className="font-semibold mt-4">Teknologier:</h5>
       <p className="text-base mx-auto">JavaScript för spel-logik och interaktivitet. CSS för design och responsiv layout. HTML5 för strukturen.</p>
 
+      {/* Bilder-galleri */}
       <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-2">
-        <img src={light} alt="Tic-tac-toe ljus tema" className="w-96 md:mb-0" />
-        <img src={lightWin} alt="Tic-tac-toe vinst ljus tema" className="w-96 md:mb-0" />
-        <img src={dark} alt="Tic-tac-toe mörkt tema" className="w-96 md:mb-0" />
-        <img src={darkWin} alt="Tic-tac-toe vinst mörkt tema" className="w-96 md:mb-0" />
+        <img src={light} alt="Tic-tac-toe ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(light)} />
+        <img src={lightWin} alt="Tic-tac-toe vinst ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(lightWin)} />
+        <img src={dark} alt="Tic-tac-toe mörkt tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(dark)} />
+        <img src={darkWin} alt="Tic-tac-toe vinst mörkt tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(darkWin)} />
       </div>
+
+      {/* Om en bild är vald, visa den i större format */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-neutral-50/60 flex justify-center items-center" onClick={handleClose}>
+           <div className="relative">
+            {/* Stäng-knapp */}
+            <button className="absolute top-2 right-4 text-white text-md cursor-pointer hover:text-pink-400"
+              onClick={handleClose}>
+              × stäng
+            </button>
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="max-w-4xl max-h-full object-contain cursor-pointer"
+              onClick={(e) => e.stopPropagation()} // Hindra att man stänger bilden om man klickar på den
+            />
+          </div>
+        </div>
+      )}
     </section>
-    
   );
 }
 
