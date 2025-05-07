@@ -42,7 +42,7 @@ function Education() {
 
           <div>
             <h3 className="font-semibold mt-6">Medieprogrammet – Nti-gymnasiet, Eskilstuna</h3>
-            <p className="italic text-sm text-pink-400">2009 – 2013</p>
+            <p className="italic text-sm text-pink-400">2009 – 2012</p>
             <p>Inriktning: Grafisk kommunikation. Utbildningen innefattade kunskaper inom fotografering, grafisk design, medieproduktion och multimedia.</p>
           </div>
         </section>
