@@ -61,7 +61,7 @@ function TicTacToe() {
             <img
               src={selectedImage}
               alt="Selected"
-              className="max-w-4xl max-h-full object-contain cursor-pointer"
+              className="w-96 lg:w-auto object-contain cursor-pointer shadow-2xl rounded-xl"
               onClick={(e) => e.stopPropagation()} // Hindra att man stänger bilden om man klickar på den
             />
           </div>
