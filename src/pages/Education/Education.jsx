@@ -27,8 +27,8 @@ function Education() {
           <div>
             <h4 className="font-semibold mt-6">Kommande kurser (HT-25, VT-26)</h4>
             <ul className="list-disc list-inside pl-4">
-              <li>Backend-utveckling med SQL och databashantering.</li>
-              <li>Fullstack-fokus med C#, ASP.NET Core och EF Core.</li>
+              <li>Backend-utveckling med JavaScript, SQL, databashantering.</li>
+              <li>Fullstack-fokus med C#, ASP.NET Core, Entity Framework Core och Web API.</li>
               <li>LIA (Lärande i arbete)</li>
               <li>Examensarbete</li>
             </ul>

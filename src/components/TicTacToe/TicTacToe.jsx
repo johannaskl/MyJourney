@@ -22,7 +22,7 @@ function TicTacToe() {
         <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">
           Spela Tic-Tac-Toe
         </a>
-        <p className="text-base mx-auto">
+        <p className="text-base mx-auto mt-2">
           Tic-Tac-Toe är ett klassiskt, interaktivt spel där användaren kan spela mot en dator. Datorn gör smarta drag baserat på strategiska överväganden, såsom att försöka vinna, blockera spelarens drag eller välja slumpmässiga drag om det inte finns
           någon omedelbar hotbild.
         </p>
@@ -31,7 +31,7 @@ function TicTacToe() {
       <h5 className="font-semibold mt-4">Funktioner:</h5>
       <ul className="list-disc ml-6 text-base mx-auto">
         <li>Spela mot datorn: Du spelar som X, medan datorn spelar som O.</li>
-        <li>Smart dator AI: Datorn analyserar spelet och gör strategiska drag för att vinna eller blockera spelarens framsteg.</li>
+        <li>Smart dator: Datorn analyserar spelet och gör strategiska drag för att vinna eller blockera spelarens framsteg.</li>
         <li>Tema: Möjlighet att växla mellan ett mörkt och ljust tema för bättre användarupplevelse.</li>
         <li>Automatisk vinstkontroll: Spelplanen övervakas automatiskt för att upptäcka vinnande kombinationer och avsluta spelet när någon vinner.</li>
         <li>Oavgjort: Om ingen av spelarna vinner, hanteras oavgjort korrekt.</li>
@@ -42,7 +42,8 @@ function TicTacToe() {
       <p className="text-base mx-auto">JavaScript för spel-logik och interaktivitet. CSS för design och responsiv layout. HTML5 för strukturen.</p>
 
       {/* Bilder-galleri */}
-      <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-2">
+      <p className="mt-6 text-sm">Klicka på bilderna för att se mer eller testa spelet genom att <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">här</a>!</p>
+      <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2">
         <img src={light} alt="Tic-tac-toe ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(light)} />
         <img src={lightWin} alt="Tic-tac-toe vinst ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(lightWin)} />
         <img src={dark} alt="Tic-tac-toe mörkt tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(dark)} />
