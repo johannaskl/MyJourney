@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import light from "/images/tic-tac-light.png";
 import lightWin from "/images/tic-tac-light-win.png";
 import dark from "/images/tic-tac-dark.png";
@@ -42,7 +42,7 @@ function TicTacToe() {
       <p className="text-base mx-auto">JavaScript för spel-logik och interaktivitet. CSS för design och responsiv layout. HTML5 för strukturen.</p>
 
       {/* Bilder-galleri */}
-      <p className="mt-6 text-sm">Klicka på bilderna för att se mer eller testa spelet genom att <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">här</a>!</p>
+      <p className="mt-6 text-sm">Klicka på bilderna för att se mer eller testa spelet genom att klicka <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">här</a>!</p>
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2">
         <img src={light} alt="Tic-tac-toe ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(light)} />
         <img src={lightWin} alt="Tic-tac-toe vinst ljus tema" className="w-96 md:mb-0 cursor-pointer" onClick={() => handleClick(lightWin)} />

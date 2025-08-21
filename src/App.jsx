@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { Routes, Route } from "react-router";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -12,18 +12,16 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 function App() {
 
   return (
-    <Router basename="/MyJourney">
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-        </Route>
-      </Routes>
-    </Router>
+    <Routes basename="/MyJourney">
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Route>
+    </Routes>
   )
 }
 
