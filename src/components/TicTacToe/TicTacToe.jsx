@@ -16,20 +16,20 @@ function TicTacToe() {
   };
 
   return (
-    <section className="text-base max-w-xl mx-auto text-left sm:text-justify space-y-3">
+    <section className="text-base max-w-3xl mx-auto text-left space-y-3">
       <div>
         <h3 className="font-semibold">Tre i rad</h3>
         <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">
           Spela Tic-Tac-Toe
         </a>
-        <p className="text-base mx-auto mt-2">
+        <p className="text-base mt-2">
           Tic-Tac-Toe är ett klassiskt, interaktivt spel där användaren kan spela mot en dator. Datorn gör smarta drag baserat på strategiska överväganden, såsom att försöka vinna, blockera spelarens drag eller välja slumpmässiga drag om det inte finns
           någon omedelbar hotbild.
         </p>
       </div>
 
       <h5 className="font-semibold mt-4">Funktioner:</h5>
-      <ul className="list-disc ml-6 text-base mx-auto">
+      <ul className="list-disc ml-6 text-base">
         <li>Spela mot datorn: Du spelar som X, medan datorn spelar som O.</li>
         <li>Smart dator: Datorn analyserar spelet och gör strategiska drag för att vinna eller blockera spelarens framsteg.</li>
         <li>Tema: Möjlighet att växla mellan ett mörkt och ljust tema för bättre användarupplevelse.</li>
@@ -39,7 +39,7 @@ function TicTacToe() {
       </ul>
 
       <h5 className="font-semibold mt-4">Teknologier:</h5>
-      <p className="text-base mx-auto">JavaScript för spel-logik och interaktivitet. CSS för design och responsiv layout. HTML5 för strukturen.</p>
+      <p className="text-base">JavaScript för spel-logik och interaktivitet. CSS för design och responsiv layout. HTML5 för strukturen.</p>
 
       {/* Bilder-galleri */}
       <p className="mt-6 text-sm">Klicka på bilderna för att se mer eller testa spelet genom att klicka <a href="https://johannaskl.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline text-sm">här</a>!</p>

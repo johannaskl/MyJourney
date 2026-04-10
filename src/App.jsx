@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route } from "react-router";
 import Layout from "./components/Layout/Layout";
+import ProfileLayout from "./components/ProfileLayout/ProfileLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -14,9 +15,13 @@ function App() {
   return (
     <Routes basename="/MyJourney">
       <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+
+        <Route element={<ProfileLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>        
+        
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/portfolio" element={<Portfolio />} />
