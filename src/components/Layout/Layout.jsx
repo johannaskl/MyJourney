@@ -49,7 +49,7 @@ const Layout = () => {
       </main>
 
       <footer>
-        <p className="flex justify-center font-thin text-neutral-500 mt-12">
+        <p className="flex justify-center font-thin mt-12 text-pink-400">
           <Link to="/">&copy; Johanna Larsson </Link>
         </p>
       </footer>
