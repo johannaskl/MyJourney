@@ -1,22 +1,30 @@
 
-# 🧭 MyJourney – Personlig webbplats
+# 🧭 MyJourney – Personal Website
 
-Detta är en personlig portfolio- och CV-webbplats byggd med React och Tailwind.
+This is a personal portfolio and CV website built with React and Tailwind CSS
 
-## ✨ Tekniker
+## ✨ Technologies
 - React (.jsx)
 - React Router
 - Tailwind CSS
-- Git (versionshantering)
+- Git (Version Control)
 
-## 📌 Funktioner
-- Flera sidor: Om mig, Portfolio, Erfarenhet, Kontakt m.m.
-- Responsiv design
-- Navigering med React Router
-- Stilren och lättläst layout med Tailwind
+## 📌 Functions
+- Multiple pages: About Me, Portfolio, Experience, Contact, and more
+- Responsive design
+- Navigation with React Router
+- Clean and easy-to-read layout with Tailwind CSS
 
 ## 🛠️ Status
-Projektet är under uppbyggnad. Mer innehåll, design och funktionalitet tillkommer löpande.
+The project is currently under development. More content, design improvements, and features will be addad over time
 
-## 🧠 Syfte
-Att bygga en egen webbplats där jag presenterar min resa som utvecklare och visar vad jag kan.
+## 🧠 Purpose
+To build a personal website where I can showcase my journey as a developer and demonstrate my skills and projects
+
+## 📦 Version
+v1.0 - Initial release (2025)
+
+## 🚀 Planned Updates
+- Additional portfolio projects
+- Improved design
+- New features and content
