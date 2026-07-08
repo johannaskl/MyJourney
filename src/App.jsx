@@ -18,12 +18,12 @@ function App() {
 
         <Route element={<ProfileLayout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/om-mig" element={<About />} />
+          <Route path="/kontakt" element={<Contact />} />
         </Route>        
         
-        <Route path="/education" element={<Education />} />
-        <Route path="/experience" element={<Experience />} />
+        <Route path="/utbildning" element={<Education />} />
+        <Route path="/yrkesbakgrund" element={<Experience />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Route>
     </Routes>
