@@ -1,6 +1,34 @@
 
 html {
-    background: #ebe6e6;
+    /* background: #f3eeee78; */
     margin: 10px;
-    color: #2d3748;
+    color: #1f1f20;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #ff7d91,
+    #ffb3a7,
+    #ffdca3,
+    #ffc7a0
+  );
+
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
