@@ -13,7 +13,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 function App() {
 
   return (
-    <Routes basename="/MyJourney">
+    <Routes basename="/">
       <Route element={<Layout />}>
 
         <Route element={<ProfileLayout />}>
