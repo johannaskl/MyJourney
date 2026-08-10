@@ -24,10 +24,28 @@ const Layout = () => {
             </h1>
           </Link>
 
-          <button 
-            className="md:hidden text-slate-50 text-3xl"
+          <button
+            className="md:hidden flex flex-col justify-center items-center w-10 h-10 group"
             onClick={() => setOpen(!open)}
-          >☰</button>
+            aria-expanded={open}
+            aria-label="Toggle navigation"
+          >
+            <span
+              className={`block h-1 w-8 bg-slate-50 rounded transition-transform duration-300 ${
+                open ? "translate-y-2 rotate-45" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-1 w-8 bg-slate-50 rounded my-1 transition-opacity duration-300 ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`block h-1 w-8 bg-slate-50 rounded transition-transform duration-300 ${
+                open ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            ></span>
+          </button>
         </div>
 
         {/* Navigering */}
