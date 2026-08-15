@@ -8,11 +8,11 @@ function Contact() {
 
   return (
     <>
-      <img src={contactImg} alt="Min kontaktbild" className="rounded-full w-96 h-96 object-cover mb-9 md:mb-0" />
+      <img src={contactImg} alt="Min kontaktbild" className="rounded-full aspect-square w-full max-w-96 object-cover mb-9 md:mb-0" />
       <section className="max-w-md w-full">
-        <h2 className="text-xl font-medium mb-6">Kontakta mig</h2>
-        <p className="text-base md:text-lg max-w-xl mx-auto mb-10">Har du frågor eller vill nätverka? Kontakta mig gärna via 
-          <a href="https://www.linkedin.com/in/larsson-johanna" target="_blank" rel="noopener noreferrer" className="text-pink-400"> LinkedIn</a>!
+        <h2 className="text-xl font-medium mb-5">Kontakta mig</h2>
+        <p className="text-base md:text-lg max-w-xl mx-auto mb-5">Har du frågor eller vill nätverka? Kontakta mig gärna via 
+          <a href="https://www.linkedin.com/in/larsson-johanna" target="_blank" rel="noopener noreferrer" className="text-pink-600"> LinkedIn</a>!
         </p>          
       </section>
     </>    

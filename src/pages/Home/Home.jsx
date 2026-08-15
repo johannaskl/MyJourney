@@ -8,9 +8,9 @@ function Home() {
 
   return (
     <>      
-      <img src={profileImg} alt="Min profilbild" className="rounded-full w-96 h-96 object-cover mb-9 md:mb-0" />
+      <img src={profileImg} alt="Min profilbild" className="rounded-full aspect-square w-full max-w-96 object-cover mb-9 md:mb-0" />
       <section className="max-w-md w-full">
-        <h2 className="text-2xl font-medium mb-6 ">Frontendutvecklare</h2>
+        <h2 className="text-2xl font-medium mb-5 ">Frontendutvecklare</h2>
       </section>            
     </>
   );

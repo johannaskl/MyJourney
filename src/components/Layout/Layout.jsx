@@ -28,7 +28,7 @@ const Layout = () => {
   return (
     <>
       <header className="text-center">
-        <div className="flex items-center justify-between md:block">
+        <div className="flex items-center justify-between md:block mx-1.5">
           <Link to="/">
             <h1 className="text-3xl sm:text-5xl md:text-9xl font-bold my-5 md:my-10 text-slate-50 text-left sm:text-center">
               JOHANNA LARSSON
@@ -69,7 +69,7 @@ const Layout = () => {
         <nav className="mt-4">
 
           {/* Mobilmeny */}
-          <ul className={`flex flex-col gap-2 md:hidden transition-all duration-300 ${
+          <ul className={`flex flex-col gap-2 md:hidden transition-all duration-300 mx-1.5 ${
               open 
                 ? "max-h-96 opacity-100 bg-slate-50/40 rounded-2xl"
                 : "max-h-0 opacity-0 overflow-hidden pointer-events-none"
@@ -85,7 +85,7 @@ const Layout = () => {
                   className={`block rounded-full px-6 py-2 transition-all duration-200 ${
                     pathname === link.path
                       ? "bg-slate-50 text-slate-900"
-                      : "hover:bg-slate-50/60"
+                      : "hover:bg-slate-50/50"
                   }`}
                 >
                   {link.label}
@@ -114,12 +114,12 @@ const Layout = () => {
         </nav>
       </header>
 
-      <main>
+      <main className="bg-slate-50/15 mt-5">
         <Outlet />
       </main>
 
       <footer>
-        <p className="flex justify-center font-thin mt-20 text-slate-50/50">
+        <p className="flex justify-center font-thin mt-10 text-slate-50/50">
           <Link to="/">&copy; Johanna Larsson </Link>
         </p>
       </footer>
