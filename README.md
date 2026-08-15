@@ -1,6 +1,5 @@
 
 # 🧭 MyJourney – Personal Website
-
 This is a personal portfolio and CV website built with React and Tailwind CSS
 
 ## ✨ Technologies
@@ -16,15 +15,16 @@ This is a personal portfolio and CV website built with React and Tailwind CSS
 - Clean and easy-to-read layout with Tailwind CSS
 
 ## 🛠️ Status
-The project is currently under development. More content, design improvements, and features will be addad over time
+The project is under development. More content, design improvements, and features will be added over time
 
 ## 🧠 Purpose
 To build a personal website where I can showcase my journey as a developer and demonstrate my skills and projects
 
 ## 📦 Version
 v1.0 - Initial release (2025)
+v1.1 - Improved navigation, layout, and content (2026)
 
-## 🚀 Planned Updates
+## 🚀 Future Updates
 - Additional portfolio projects
 - Improved design
 - New features and content
