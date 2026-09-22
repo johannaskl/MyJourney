@@ -114,7 +114,7 @@ const Layout = () => {
         </nav>
       </header>
 
-      <main className="bg-slate-50/15 mt-5">
+      <main className="bg-slate-50/35 mt-5">
         <Outlet />
       </main>
 
