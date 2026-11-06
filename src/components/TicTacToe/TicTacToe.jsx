@@ -92,13 +92,20 @@ function TicTacToe() {
         <div className="grid grid-cols-3 items-center mt-6">
 
           <div className="flex justify-start">
-            <button onClick={prevSlide} aria-label="Föregående bilder" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-4 sm:px-6 py-2 transition cursor-pointer">
-              ← Föregående
+            <button onClick={prevSlide} aria-label="Föregående bilder" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full p-2 transition cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14.29 6.29 8.59 12l5.7 5.71 1.42-1.42-4.3-4.29 4.3-4.29z" />
+              </svg>
             </button>
           </div>
 
           {/* Prickar */}
-          <div className="flex justify-center gap-2 mt-4">
+          <div className="flex justify-center gap-2">
             {imageGroups.map((_, index) => (
               <button
                 key={index}
@@ -114,8 +121,15 @@ function TicTacToe() {
           </div>
 
           <div className="flex justify-end">
-            <button onClick={nextSlide} aria-label="Nästa bilder" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-4 sm:px-6 py-2 transition cursor-pointer">
-              Nästa →
+            <button onClick={nextSlide} aria-label="Nästa bilder" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full p-2 transition cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="m9.71 17.71 5.7-5.71-5.7-5.71-1.42 1.42 4.3 4.29-4.3 4.29z" />
+              </svg>
             </button>
           </div>
 
